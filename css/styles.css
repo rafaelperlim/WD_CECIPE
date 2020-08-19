@@ -1,0 +1,267 @@
+/* SELETORES GERAIS
+---------------------------- */
+a {text-decoration: none;}
+
+body {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+  padding: 3% 18% 4% 20%;
+}
+
+.section-title {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.625rem;
+}
+
+
+/* HEADER(background) e MENU(container)
+---------------------------- */
+
+.header {
+  background: #fff;
+  height: 6rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.header .menu {
+  display: inline-block;
+  width: 61.5%;
+}
+
+/* LOGO
+---------------------------- */
+
+.menu .logo {
+  margin: 2% 0 0 -7.25%;
+  max-width: 320px;
+  min-width: 160px;
+  width: 25%;
+}
+
+/* BARRA DE NAVEGAÇÃO
+---------------------------- */
+
+.menu .nav-bar {
+  font-size: 1.1vw;
+  float: right;
+  margin-top: 2%;
+  min-width: 80%;
+  text-align: right;
+
+}
+
+.menu .nav-bar .nav-link:link, .menu  .nav-bar .nav-link:visited {
+  color:  #36953f;
+  display: inline;
+  font-weight: 700;
+  margin-left: 5%;
+}
+
+.menu .nav-bar .nav-link:hover {
+  color: #003862;
+
+}
+
+/* MENU RESPONSIVO
+---------------------------- */
+
+.menu .bar-menu {
+  display: none;
+  float: right;
+}
+
+.menu .bar-menu-img {
+  width: 3.5rem;
+}
+
+/* ÍCONES REDES SOCIAIS
+---------------------------- */
+
+.menu .social-net {
+  clear: right;
+  float: right;
+  margin-top: -3.75%;
+}
+
+.menu .social-net .icon {
+  margin-left: .25rem;
+  width: 30px;
+}
+
+
+
+/* TÍTULO (CITAÇÃO)
+---------------------------- */
+
+.title {
+  background: url("../imgs/title-background2.jpg") no-repeat 50% 53%;
+  background-size: 100%;
+  padding-bottom: 7%;
+  padding-top: 12%;
+  text-align: right;
+}
+
+.title .title-image {
+  float: left;
+  margin-left: -2.5%;
+  margin-top: 3%;
+  width: 30%;
+}
+
+.title .quote {
+  color: #202020;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.25vw;
+  font-weight: 700;
+}
+
+.title .quote-signature {
+  margin-left: 25%;
+  width: 10rem;
+}
+
+
+
+/* INTRODUÇÃO
+---------------------------- */
+
+.intro {
+  background: #fafafa;
+}
+
+.intro .section-title {
+  color: #1c7fa9;
+}
+
+.intro .about {
+  max-width: 50%;
+  margin: 5% 0;
+}
+
+
+/* BOTÕES */
+.intro .volunteer-button {
+  border: 2px solid #5abc45;
+  border-radius: 1rem;
+  color: #5abc45;
+  display: inline-block;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  padding: .75% 1.75%;
+}
+
+.intro .volunteer-button:hover {
+  background-color: #5abc45;
+  color: #fff;
+}
+
+.intro .donate-button {
+  border: 2px solid #1c7fa9;
+  border-radius: 1rem;
+  color: #1c7fa9;
+  display: inline-block;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  padding: .75% 1.75%;
+}
+
+.intro .donate-button:hover {
+  background-color: #1c7fa9;
+  color: #fff;
+}
+
+
+
+/* COMUNICADOS
+---------------------------- */
+
+/* .news {
+
+} */
+
+.news .section-title {
+  color: #36953f;
+}
+
+
+
+/* DOWNLOADS
+---------------------------- */
+
+.downloads {
+  background: #fafafa;
+}
+
+.downloads .section-title {
+  color: #1c7fa9;
+}
+
+
+
+/* CONTATOS
+---------------------------- */
+
+/* .contact {
+
+} */
+
+.contact .section-title {
+  color: #36953f;
+}
+
+
+
+/* RODAPÉ
+---------------------------- */
+
+.footer {
+  background-color: #cce3cb;
+  font-size: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .rights {
+  display: inline-block;
+}
+
+
+
+
+/* MEDIA QUERIES
+---------------------------- */
+@media screen and (min-width: 1600px) {
+  section {font-size: 1.5rem; padding: 5% 19% 5% 18%;}
+  .header {height: 7rem;}
+  .header .menu {width: 62.5%;}
+  .menu .nav-bar {font-size: 1rem;}
+}
+
+@media screen and (max-width: 1000px) {
+  .header {height: 3.5rem;}
+  .menu .nav-bar {margin-top: .75%; min-width: inherit;}
+  .menu .nav-bar {display: none;}
+  .menu .bar-menu {display: inline-block;}
+  .menu .responsive  {background-color: #cce3cb; border: 2px #5da9d2; display: block;}
+  .menu .responsive .nav-link:link, .menu  .nav-bar .nav-link:visited {display: block; padding: .75rem;}
+  .menu .social-net {display: none;}
+  .title .quote {font-size: 1rem;}
+  .title .quote-signature {width: 5rem;}
+}
+
+@media screen and (max-width: 720px) {
+  .content {text-align: center;}
+  .intro .about {max-width: 100%;}
+  .logo {margin-top: 5%;}
+  .menu .bar-menu-img {width: 2.5rem;}
+  .title {background-size: 155%; padding-top: 25%; text-align: center;}
+  .title .title-image {float: none; margin: 0; position: static;}
+}
