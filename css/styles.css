@@ -46,6 +46,19 @@ section {
   width: 25%;
 }
 
+/* MENU RESPONSIVO
+---------------------------- */
+
+.menu .bar-menu {
+  display: none;
+  float: right;
+}
+
+.menu .bar-menu-img {
+  width: 3.5rem;
+  margin-top: .5rem;
+}
+
 /* BARRA DE NAVEGAÇÃO
 ---------------------------- */
 
@@ -68,18 +81,6 @@ section {
 .menu .nav-bar .nav-link:hover {
   color: #003862;
 
-}
-
-/* MENU RESPONSIVO
----------------------------- */
-
-.menu .bar-menu {
-  display: none;
-  float: right;
-}
-
-.menu .bar-menu-img {
-  width: 3.5rem;
 }
 
 /* ÍCONES REDES SOCIAIS
